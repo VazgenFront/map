@@ -1,0 +1,19 @@
+.splitter-drag-bar {
+    flex-shrink: 0;
+    width: 5px;
+    background-color: #ddd;
+    cursor: col-resize;
+    transition: background-color 0.15s 0.15s ease-in-out;
+    z-index: 1000;
+}
+
+.splitter-drag-bar.splitter-drag-bar--dragging,
+.splitter-drag-bar:hover {
+    background-color: #bbb;
+}
+
+.splitter-drag-bar.splitter-drag-bar--horizontal {
+    height: 5px;
+    width: 100%;
+    cursor: row-resize;
+}
